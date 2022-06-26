@@ -260,10 +260,17 @@ plantBarley
 plantFlax
 seed
 rock
+<<<<<<< Updated upstream
 materialStoneTool
 buttonWood
 tallow
 mushroomAny
+=======
+buttonWood
+materialStoneTool
+mushroomAny
+tallow
+>>>>>>> Stashed changes
 blockSlimeGreen
 blockSlimeBlue
 blockSlimeRed
@@ -1577,6 +1584,7 @@ foodMarshmellowchicks
 foodBbqchickenbiscuit
 foodChickenbiscuit
 foodPizzaslice
+<<<<<<< Updated upstream
 ingotBronze
 dustViridium
 dustIron
@@ -1613,13 +1621,62 @@ ingotWroughtIron
 nuggetGravitite
 dustSoulforgedSteel
 oreWroughtIron
+=======
+dustCrucibleSteel
+dustAmbrosium
+ingotGravitite
+shardWroughtIron
+nuggetViridium
+nuggetElectrum
+ingotZinc
+dustSilver
+dustIron
+ingotBronze
+dustGravitite
+dustBronze
+nuggetBronze
+dustGold
+nuggetBrass
+dustBrass
+dustMythril
+dustElectrum
+dustCopper
+nuggetTin
+ingotElectrum
+dustViridium
+nuggetMythril
+dustZinc
+nuggetZinc
+ingotWroughtIron
+densePlateElectrum
+nuggetGravitite
+plateDenseElectrum
+nuggetWroughtIron
+dustSoulforgedSteel
+dustTin
+dustEndorium
+ingotBrass
+nuggetCopper
+>>>>>>> Stashed changes
 blockZinc
 oreZinc
 blockWroughtIron
+oreWroughtIron
 barkWood
+<<<<<<< Updated upstream
 shardGlass
 stonePolished
 plankStained
+=======
+stonePolished
+plankStained
+shardGlass
+gemEnderBiotite
+stoneBrimstonePolished
+stonePermafrostPolished
+blockPrismarineElderBrick
+blockPrismarineElderDark
+>>>>>>> Stashed changes
 trapdoorWood
 bookshelf
 bookshelfOak
@@ -1630,11 +1687,14 @@ bookshelfAcacia
 bookshelfDarkOak
 blockCandle
 pressurePlateWood
+<<<<<<< Updated upstream
 gemEnderBiotite
 stoneBrimstonePolished
 stonePermafrostPolished
 blockPrismarineElderBrick
 blockPrismarineElderDark
+=======
+>>>>>>> Stashed changes
 blockSlimeCyan
 blockSlimeMagenta
 blockSlimeYellow
@@ -2310,30 +2370,69 @@ skinBearBlack
 skinBearKermode
 foodEgg
 eggCookable
+<<<<<<< Updated upstream
 denseoreRedstone
 oreRedstoneDense
+=======
+denseorePeridot
+orePeridotDense
+>>>>>>> Stashed changes
 denseoreGold
 oreGoldDense
 densesourceGold
 sourceGoldDense
+<<<<<<< Updated upstream
 denseorePeridot
 orePeridotDense
+=======
+denseoreTin
+oreTinDense
+densesourceTin
+sourceTinDense
+denseblockMagma
+blockMagmaDense
+denseoreMythril
+oreMythrilDense
+denseoreMithril
+oreMithrilDense
+denseoreCoal
+oreCoalDense
+>>>>>>> Stashed changes
 denseoreIron
 oreIronDense
 densesourceIron
 sourceIronDense
+<<<<<<< Updated upstream
 denseoreEmerald
 oreEmeraldDense
+=======
+>>>>>>> Stashed changes
 denseoreSilver
 oreSilverDense
 densesourceSilver
 sourceSilverDense
+<<<<<<< Updated upstream
+=======
+denseoreSapphire
+oreSapphireDense
+>>>>>>> Stashed changes
 denseoreCopper
 oreCopperDense
 densesourceCopper
 sourceCopperDense
+<<<<<<< Updated upstream
 denseblockMagma
 blockMagmaDense
+=======
+denseoreLapis
+oreLapisDense
+denseoreEmerald
+oreEmeraldDense
+denseoreRedstone
+oreRedstoneDense
+denseoreRuby
+oreRubyDense
+>>>>>>> Stashed changes
 denseoreAdamantium
 oreAdamantiumDense
 denseoreAdamantite
@@ -2342,6 +2441,7 @@ denseoreAdamantine
 oreAdamantineDense
 denseoreViridium
 oreViridiumDense
+<<<<<<< Updated upstream
 denseoreTin
 oreTinDense
 densesourceTin
@@ -2364,6 +2464,14 @@ denseoreCoal
 oreCoalDense
 denseoreCincinnasite
 oreCincinnasiteDense
+=======
+denseoreCincinnasite
+oreCincinnasiteDense
+denseoreDiamond
+oreDiamondDense
+denseoreAmethyst
+oreAmethystDense
+>>>>>>> Stashed changes
 denseoreOnyx
 oreOnyxDense
 oreOctine

@@ -126,7 +126,7 @@
 },
 
 
-/////////// DIAMOND ARMOR GAMESTAGE //////////////
+/////////// KILLED QUAZAR GAMESTAGE //////////////
 
 {
     "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
@@ -154,37 +154,6 @@
     "armorboots": ["iceandfire:armor_silver_metal_boots", "minecraft:iron_boots"],
     "gamestage": "killedQuazar"
 },
-
-
-/////////// MYTHRIL GAMESTAGE //////////////
-
-{
-    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
-    "random": 0.1,
-    "armorhelmet": ["minecraft:diamond_helmet","endreborn:armour_helmet_helmet"],
-    "gamestage": "minedMythril"
-},
-{
-    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
-    "random": 0.1,
-    "armorchest": ["minecraft:diamond_chestplate","endreborn:armour_chestplate_obsidian"],
-    "gamestage": "minedMythril"
-
-},
-{
-    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
-    "random": 0.1,
-    "armorlegs": ["minecraft:diamond_leggings","endreborn:armour_leggings_obsidian"],
-    "gamestage": "minedMythril"
-
-},
-{
-    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
-    "random": 0.1,
-    "armorboots": ["minecraft:diamond_boots","endreborn:armour_boots_obsidian"],
-    "gamestage": "minedMythril"
-},
-
 
 /////////// ENDER DRAGON GAMESTAGE //////////////
 
@@ -218,29 +187,80 @@
 ////////////////// TOOL GAME STAGES //////////////////////////
 {
     "mob": ["minecraft:zombie","primitivemobs:goblin"],
-    "helditem": ["2=simpleores:mythril_pickaxe","2=primitivemobs:goblin_mace"],
-    "gamestage": "minedMythril"
-},
-{
-    "mob": ["minecraft:zombie","primitivemobs:goblin"],
-    "helditem": ["3=simpleores:onyx_pickaxe"],
-    "gamestage": "killedWither"
-},
-{
-    "mob": ["minecraft:zombie","primitivemobs:goblin"],
     "helditem": ["3=minecraft:diamond_pickaxe","3=atop:ruby_pickaxe","3=atop:sapphire_pickaxe","3=atop:peridot_pickaxe","2=simpleores:adamantium_pickaxe"],
     "gamestage": "enteredBeneath"
 },
 {
     "mob": ["minecraft:zombie","primitivemobs:goblin"],
-    "helditem": ["3=atop:steel_pickaxe", "2=atop:mud_pickaxe"],
-    "gamestage": "enteredNether"
+    "helditem": ["3=minecraft:diamond_pickaxe","3=atop:ruby_pickaxe","3=atop:sapphire_pickaxe","3=atop:peridot_pickaxe","2=simpleores:adamantium_pickaxe"],
+    "gamestage": "minedMythril"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["2=simpleores:mythril_pickaxe","2=primitivemobs:goblin_mace"],
+    "gamestage": "minedMythril"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["3=minecraft:diamond_pickaxe","3=atop:ruby_pickaxe","3=atop:sapphire_pickaxe","3=atop:peridot_pickaxe","2=simpleores:adamantium_pickaxe"],
+    "gamestage": "enteredEnd"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["2=simpleores:mythril_pickaxe","2=primitivemobs:goblin_mace"],
+    "gamestage": "enteredEnd"
 },
 {
     "mob": ["minecraft:zombie","primitivemobs:goblin"],
     "helditem": "3=atop:amethyst_pickaxe",
     "gamestage": "enteredEnd"
-},/*
+},
+
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["3=minecraft:diamond_pickaxe","3=atop:ruby_pickaxe","3=atop:sapphire_pickaxe","3=atop:peridot_pickaxe","2=simpleores:adamantium_pickaxe"],
+    "gamestage": "killedEnderDragon"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["2=simpleores:mythril_pickaxe","2=primitivemobs:goblin_mace"],
+    "gamestage": "killedEnderDragon"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": "3=atop:amethyst_pickaxe",
+    "gamestage": "killedEnderDragon"
+},
+
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["3=minecraft:diamond_pickaxe","3=atop:ruby_pickaxe","3=atop:sapphire_pickaxe","3=atop:peridot_pickaxe","2=simpleores:adamantium_pickaxe"],
+    "gamestage": "enteredTwilightForest"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["2=simpleores:mythril_pickaxe","2=primitivemobs:goblin_mace"],
+    "gamestage": "enteredTwilightForest"
+},
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": "3=atop:amethyst_pickaxe",
+    "gamestage": "enteredTwilightForest"
+},
+
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["3=simpleores:onyx_pickaxe"],
+    "gamestage": "killedWither"
+},
+
+{
+    "mob": ["minecraft:zombie","primitivemobs:goblin"],
+    "helditem": ["3=atop:steel_pickaxe", "2=atop:mud_pickaxe"],
+    "gamestage": "enteredNether"
+},
+
+/*
 {
     "mob": ["minecraft:zombie","primitivemobs:goblin"],
     "helditem": ["1=minecraft:iron_pickaxe", "2=atop:mud_pickaxe"],
@@ -477,26 +497,6 @@
     "result": "deny"
  },
 
-// Trumpet Skelly
- {
-    "dimension": 0,
-    "mob": "trumpetskeleton:trumpet_skeleton",
-    "maxlight": 7,
-    "minlight": 0,
-    "random": 0.00001,
-    "gamestage": "minedMythril",
-    "maxcount": {
-        "amount": 1,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": [0,10,7,4],
-    "mob": "trumpetskeleton:trumpet_skeleton",
-    "result": "deny"
- },
-
 /// MowziesMobs Beneath spawn cap
  // lantern
  {
@@ -544,24 +544,6 @@
     "result": "deny"
  },
 
-{
-   "dimension": 10,
-  "mob": "mowziesmobs:grottol",
-  "maxlight": 1,
-  "minlight": 0,
-  "gamestage": "minedMythril",
-  "maxheight": 200,
-    "maxcount": {
-        "amount": 1,
-        "perplayer": true
-    },
-  "result": "allow"
-},
-{
-  "dimension": 10,
-  "mob": "mowziesmobs:grottol",
-  "result": "deny"
-},
 
 
 // attempt to ensure black death only spawns one at a time
@@ -860,47 +842,10 @@
  }, 
  
  
-  {
-    "dimension": 0,
-    "mob": "mod_lavacow:undertaker",
-    "maxlight": 7,
-	"random": 0.5,
-	"gamestage": "enteredBeneath",
-	"biome": ["Ominous Woods", "Wasteland", "Dead Forest"],
-    "maxcount": {
-        "amount": 1,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": 0,
-    "mob": "mod_lavacow:undertaker",
-    "result": "deny"
- }, 
+  
  
  /////////////// GAME STAGES ///////////////
-  // Zotzpyre
- {
-    "dimension": [0,10],
-    "mob": "betteranimalsplus:zotzpyre",
-    "maxlight": 7,
-    "minlight": 0,
-	"maxheight": 100,
-	"random": 0.3,
-	"seesky": false,
-    "gamestage": "enteredBeneath",
-    "maxcount": {
-        "amount": 2,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": [0,10],
-    "mob": "betteranimalsplus:zotzpyre",
-    "result": "deny"
- },
+ 
  
  {
     "dimension": 0,
@@ -1373,23 +1318,6 @@
 
  // Creepers
 
- {
-    "dimension": 10,
-    "mob": "specialmobs:deathcreeper",
-    "maxlight": 7,
-    "minlight": 0,
-    "gamestage": "enteredBeneath",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": 10,
-    "mob": "specialmobs:deathcreeper",
-    "result": "deny"
- },
 
  {
     "dimension": -1,
@@ -1439,39 +1367,6 @@
     "mob": "specialmobs:jumpingcreeper",
     "result": "deny"
  },
-
- {
-    "dimension": [10],
-    "mob": "specialmobs:darkcreeper",
-    "gamestage": "enteredBeneath",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:darkcreeper",
-    "result": "deny"
- },
-
-{
-    "dimension": [0,10],
-    "mob": "specialmobs:lightningcreeper",
-    "gamestage": "minedMythril",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:lightningcreeper",
-    "result": "deny"
- },
-
  {
     "dimension": [0,10],
     "mob": "specialmobs:firecreeper",
@@ -1554,40 +1449,7 @@
     "mob": "specialmobs:wildswitch",
     "result": "deny"
  },
- 
-  {
-    "dimension": [0,10],
-    "mob": "specialmobs:undeadwitch",
-    "gamestage": "enteredBeneath",
-	"random": 0.12,
-    "maxcount": {
-        "amount": 3,
-        "perplayer": true
-    },
-    "result": "default"
- },
-  {
-    "dimension": [0,10],
-    "mob": "specialmobs:undeadwitch",
-    "result": "deny"
- },
- 
-   {
-    "dimension": [0,10],
-    "mob": "specialmobs:shadowswitch",
-    "gamestage": "minedMythril",
-	"random": 0.12,
-    "maxcount": {
-        "amount": 3,
-        "perplayer": true
-    },
-    "result": "default"
- },
-   {
-    "dimension": [0,10],
-    "mob": "specialmobs:shadowswitch",
-    "result": "deny"
- },
+
  
     {
     "dimension": [0,10],
@@ -1662,52 +1524,6 @@
     "mob": "specialmobs:flyingsilverfish",
     "result": "deny"
  },
-
-  {
-    "dimension": [0,10],
-    "mob": "specialmobs:blindingsilverfish",
-    "gamestage": "enteredBeneath",
-	"maxlight": 5,
-    "minlight": 0,
-	"random": 0.3,
-    "maxheight": 80,
-	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
-	"seesky": false,
-    "maxcount": {
-        "amount": 7,
-        "perplayer": true
-    },
-    "result": "allow"
- },
-
-    {
-    "dimension": [0,10],
-    "mob": "specialmobs:blindingsilverfish",
-    "result": "deny"
- },
- 
-  {
-    "dimension": [0,10],
-    "mob": "specialmobs:poisonsilverfish",
-    "gamestage": "enteredBeneath",
-	"maxlight": 5,
-    "minlight": 0,
-	"random": 0.3,
-    "maxheight": 80,
-	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
-	"seesky": false,
-    "maxcount": {
-        "amount": 7,
-        "perplayer": true
-    },
-    "result": "allow"
- },
-    {
-    "dimension": [0,10],
-    "mob": "specialmobs:poisonsilverfish",
-    "result": "deny"
- },
- 
    {
     "dimension": [0,10],
     "mob": "specialmobs:toughsilverfish",
@@ -1768,43 +1584,6 @@
     "mob": "specialmobs:hungryzombie",
     "result": "deny"
 },
-
-
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:plaguezombie",
-    "gamestage": "enteredBeneath",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default",
-	"potion": "rats:plague,1000000,1"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:plaguezombie",
-    "result": "deny"
- },
-
-{
-    "dimension": [0,10],
-    "mob": "specialmobs:fishingzombie",
-    "gamestage": "minedMythril",
-	"armorhelmet": "rats:fisherman_hat",
-	"armorchest": "minecraft:leather_chestplate",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:fishingzombie",
-    "result": "deny"
- },
-
  {
     "dimension": [0,10],
     "mob": "specialmobs:firezombie",
@@ -1854,39 +1633,6 @@
  {
     "dimension": [0,10],
     "mob": "specialmobs:sniperskeleton",
-    "result": "deny"
- },
-
- /*
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:poisonskeleton",
-    "gamestage": "enteredBeneath",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:poisonskeleton",
-    "result": "deny"
- },
-*/
-{
-    "dimension": [0,10],
-    "mob": "specialmobs:ninjaskeleton",
-    "gamestage": "minedMythril",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:ninjaskeleton",
     "result": "deny"
  },
 
@@ -1953,29 +1699,6 @@
     "mob": "specialmobs:gatlingskeleton",
     "result": "deny"
  },
-
-{
-	"dimension" : [0, 10],
-	"mob": "specialmobs:knightskeleton",
-    "gamestage": "enteredBeneath",
-	"maxlight": 7,
-	"armorhelmet": "iceandfire:armor_silver_metal_helmet",
-	"armorchest": ["12=minecraft:iron_chestplate", "5=minecraft:chainmail_chestplate", "2=dungeontactics:steel_chestplate"],
-	"helditem": ["12=spartanweaponry:warhammer_iron", "5=spartanweaponry:longsword_iron", "8=spartanweaponry:mace_iron", "8=minecraft:iron_sword", "3=minecraft:iron_pickaxe"],
-	"maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-	"result": "allow"
-  },
-{
-	"dimension" : [0, 10],
-	"mob": "specialmobs:knightskeleton",
-	"result": "deny"
-  },
-
-
-
 {
 	"dimension" : -1,
 	"mob": "specialmobs:knightpigzombie",
@@ -2067,39 +1790,6 @@
     "mob": "specialmobs:witchspider",
     "result": "deny"
 },
-
- {
-    "dimension": 0,
-    "mob": "specialmobs:poisonspider",
-    "gamestage": "enteredBeneath",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": 0,
-    "mob": "specialmobs:poisonspider",
-    "result": "deny"
- },
-
-{
-    "dimension": [0,10],
-    "mob": "specialmobs:webspider",
-    "gamestage": "minedMythril",
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "default"
- },
- {
-    "dimension": [0,10],
-    "mob": "specialmobs:webspider",
-    "result": "deny"
- },
-
  {
     "dimension": [0,10],
     "mob": "specialmobs:giantspider",
@@ -2270,28 +1960,7 @@
     "result": "deny"
  },
 
-  {
-    "dimension": 0,
-    "mob": "specialmobs:blueberryslime",
-    "mintime": 1000,
-    "maxtime": 12000,
-    "maxlight": 15,
-    "minlight": 14,
-    "random": 0.003,
-    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
-    "seesky": true,
-    "gamestage": "minedMythril",
-    "maxcount": {
-        "amount": 2,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": 0,
-    "mob": "specialmobs:blueberryslime",
-    "result": "deny"
- },
+  
 
   {
     "dimension": 0,
@@ -2339,27 +2008,7 @@
  },
 
   // Endermen
- {
-    "dimension": [0,10,1,-1],
-    "mob": "specialmobs:blindingenderman",
-    "gamestage": "minedMythril",
-    "random": 0.0225,
-    "maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 2,
-        "perplayer": true
-    },
-    "result": "allow",
-	"potion": "rats:plague,1000000,1"
- },
- {
-    "dimension": [0,10,1,-1],
-    "mob": "specialmobs:blindingenderman",
-    "result": "deny"
- },
-
-
+ 
  {
     "dimension": [0,10,1],
     "mob": "specialmobs:icyenderman",
@@ -2447,78 +2096,6 @@
     "result": "deny"
  },
 
-// rats
- {
-    "dimension": 0,
-    "mob": "rats:rat",
-    "gamestage": "enteredBeneath",
-	"random": 0.45,
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 7,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": 0,
-    "mob": "rats:rat",
-    "result": "deny"
- },
- {
-    "dimension": 10,
-    "mob": "rats:ratlantean_spirit",
-    "gamestage": "enteredBeneath",
-	"random": 0.2,
-	"maxheight": 120,
-    "maxcount": {
-        "amount": 2,
-        "perplayer": true
-    },
-    "result": "allow",
-	"damagemultiply": 0.7,
-    "healthmultiply": 0.5,
-	"potion": "minecraft:fire_resistance,1000000,1"
- },
- {
-    "dimension": 10,
-    "mob": "rats:ratlantean_spirit",
-    "result": "deny"
- },
- {
-    "dimension": [0,10],
-    "mob": "rats:plague_beast",
-    "gamestage": "minedMythril",
-	"random": 0.01,
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 3,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": [0,10],
-    "mob": "rats:plague_beast",
-    "result": "deny"
- },
- {
-    "dimension": 0,
-    "gamestage": "enteredBeneath",
-    "mob": "rats:black_death",
-    "onjoin": "true",
-    "result": "default"
- },
- {
-    "dimension": 0,
-    "mob": "rats:black_death",
-    "onjoin": "true",
-    "result": "deny"
- },
-
-
 // skydrake
  {
     "dimension": 4,
@@ -2570,72 +2147,6 @@
  },
 
   // Fish's Undead Rising
- {
-    "dimension": [0,10],
-    "mob": "mod_lavacow:ithaqua",
-	"biome": ["Forest", "Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "ForestHills", "TaigaHills", "Extreme Hills Edge", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Cold Taiga", "Cold Taiga Hills", "Mega Taiga", "Mega Taiga Hills", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Taiga M", "Ice Plains Spikes", "Birch Forest M", "Birch Forest Hills M", "Roofed Forest M", "Cold Taiga M", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Extreme Hills+ M", "Alps", "Boreal Forest", "Cold Desert", "Crag", "Dead Forest", "Mountain", "Ominous Woods", "Seasonal Forest", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "SnowyTundra", "Glacier", "AlpsFoothills", "MountainFoothills", "The Beneath"],
-    "gamestage": "minedMythril",
-	"random": 0.25,
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 1,
-        "perplayer": true
-    },
-    "result": "allow",
-    "potion": "extraalchemy:effect.leech,1000000,7"
- },
- {
-    "dimension": [0,10],
-    "mob": "mod_lavacow:ithaqua",
-    "result": "deny"
- },
- 
-  {
-    "dimension": 0,
-    "mob": "mod_lavacow:boneworm",
-	"biome": ["Mesa", "Mesa Plateau F", "Mesa Plateau", "Desert M", "Mesa (Bryce)", "Mesa Plateau F M", "Mesa Plateau M", "Desert", "DesertHills", "Xeric Shrubland", "Marsh", "Bayou", "Bog", "Dead Swamp", "Quagmire", "Fen", "Ominous Woods", "Dead Forest"],
-    "gamestage": "minedMythril",
-	"block": ["minecraft:grass", "minecraft:sand", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "biomesoplenty:grass", "biomesoplenty:white_sand", "biomesoplenty:dried_sand", "biomesoplenty:dirt"],
-	"random": 0.20,
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 1,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": 0,
-    "mob": "mod_lavacow:boneworm",
-    "result": "deny"
- },
-
-  {
-    "dimension": -1,
-    "mob": "mod_lavacow:boneworm",
-	"biome": ["Phantasmagoric Inferno", "Visceral Heap"],
-    "gamestage": "minedMythril",
-	"block": ["minecraft:soul_sand", "biomesoplenty:flesh", "biomesoplenty:ash_block"],
-	"random": 0.20,
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 2,
-        "perplayer": true
-    },
-    "result": "allow",
-	"damagemultiply": 1.5,
-    "healthmultiply": 1.5,
-	"potion": ["minecraft:fire_resistance,1000000,1", "potioncore:purity,1000000,1", "extraalchemy:effect.concentration,1000000,1"]
- },
- {
-    "dimension": -1,
-    "mob": "mod_lavacow:boneworm",
-    "result": "deny"
- },
-
   {
     "dimension": 1,
     "mob": "mod_lavacow:ghostray",
@@ -2679,45 +2190,9 @@
  },
 
 
- {
-    "dimension": 0,
-    "mob": "mod_lavacow:undeadswine",
-	"biome": ["Plains", "Jungle", "JungleHills", "JungleEdge", "Roofed Forest", "Sunflower Plains", "Jungle M", "JungleEdge M", "Rainforest", "Tropical Rainforest", "Forest", "ForestHills", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Bayou", "Bog", "Brushland", "Chaparral", "Cherry Blossom Grove", "Dead Forest", "Grassland", "Grove", "Lavender Fields", "Maple Woods", "Ominous Woods", "Orchard", "Overgrown Cliffs", "Prairie", "Seasonal Forest", "Shrubland", "Temperate Rainforest", "Pasture", "Wasteland", "Woodland", "Tropical Island"],
-    "gamestage": "enteredBeneath",
-	"maxlight": 7,
-    "minlight": 0,
-	"random": 0.10,
-	"seesky": true,
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "allow"
- },
-{
-    "dimension": 0,
-    "mob": "mod_lavacow:undeadswine",
-    "result": "deny"
- },
  
- {
-    "dimension": 0,
-    "mob": "mod_lavacow:zombiefrozen",
-	"biome": ["Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "TaigaHills", "Cold Taiga", "Cold Taiga Hills", "Taiga M", "Ice Plains Spikes", "Cold Taiga M", "Mega Spruce Taiga", "Alps", "Boreal Forest", "Cold Desert", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "Glacier", "SnowyTundra", "AlpsFoothills"],
-    "gamestage": "enteredBeneath",
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "allow"
- },
- {
-    "dimension": 0,
-    "mob": "mod_lavacow:zombiefrozen",
-    "result": "deny"
- },
+ 
+ 
  
  // penghoul
  {
@@ -2741,25 +2216,7 @@
     "result": "deny"
  },
  
-  {
-    "dimension": [0,10],
-    "mob": "mod_lavacow:zombiemushroom",
-	"biome": ["Jungle", "JungleHills", "JungleEdge", "Swampland", "Swampland M", "Jungle M", "JungleEdge M", "Bayou", "Bog", "Dead Swamp", "Lush Swamp", "Rainforest", "Tropical Rainforest", "Tropical Island", "Quagmire", "MushroomIsland", "MushroomIslandShore", "Roofed Forest M", "Fen", "Flower Field", "Mangrove", "Marsh", "Moor", "Wetland", "Oasis", "Flower Island", "The Beneath"],  
-    "gamestage": "enteredBeneath",
-	"maxlight": 7,
-    "minlight": 0,
-    "maxcount": {
-        "amount": 5,
-        "perplayer": true
-    },
-    "result": "allow",
-    "potion": "extraalchemy:effect.leech,1000000,4"
- },
- {
-    "dimension": [0,10],
-    "mob": "mod_lavacow:zombiemushroom",
-    "result": "deny"
- },
+  
  
   {
     "dimension": 0,
@@ -3207,9 +2664,2982 @@
 	"onjoin": true,
 	"result": "default",
 	"nbt": {"DeathLootTable": "rotn:bap_badger"}
-	}
+	},
 
 
 ////// Seasonal Changes 
+
+
+
+
+
+/////REWORK THE DOCUMENT AAAAAAAAAARG
+//EnteredBeneath
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "maxlight": 7,
+	"random": 0.5,
+	"gamestage": "enteredBeneath",
+	"biome": ["Ominous Woods", "Wasteland", "Dead Forest"],
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "result": "deny"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+	"biome": ["Jungle", "JungleHills", "JungleEdge", "Swampland", "Swampland M", "Jungle M", "JungleEdge M", "Bayou", "Bog", "Dead Swamp", "Lush Swamp", "Rainforest", "Tropical Rainforest", "Tropical Island", "Quagmire", "MushroomIsland", "MushroomIslandShore", "Roofed Forest M", "Fen", "Flower Field", "Mangrove", "Marsh", "Moor", "Wetland", "Oasis", "Flower Island", "The Beneath"],  
+    "gamestage": "enteredBeneath",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,4"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+    "result": "deny"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+	"biome": ["Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "TaigaHills", "Cold Taiga", "Cold Taiga Hills", "Taiga M", "Ice Plains Spikes", "Cold Taiga M", "Mega Spruce Taiga", "Alps", "Boreal Forest", "Cold Desert", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "Glacier", "SnowyTundra", "AlpsFoothills"],
+    "gamestage": "enteredBeneath",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+    "result": "deny"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+	"biome": ["Plains", "Jungle", "JungleHills", "JungleEdge", "Roofed Forest", "Sunflower Plains", "Jungle M", "JungleEdge M", "Rainforest", "Tropical Rainforest", "Forest", "ForestHills", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Bayou", "Bog", "Brushland", "Chaparral", "Cherry Blossom Grove", "Dead Forest", "Grassland", "Grove", "Lavender Fields", "Maple Woods", "Ominous Woods", "Orchard", "Overgrown Cliffs", "Prairie", "Seasonal Forest", "Shrubland", "Temperate Rainforest", "Pasture", "Wasteland", "Woodland", "Tropical Island"],
+    "gamestage": "enteredBeneath",
+	"maxlight": 7,
+    "minlight": 0,
+	"random": 0.10,
+	"seesky": true,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+    "result": "deny"
+ },
+ {
+    "dimension": 0,
+    "gamestage": "enteredBeneath",
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "deny"
+ },
+ {
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "gamestage": "enteredBeneath",
+	"random": 0.2,
+	"maxheight": 120,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 0.7,
+    "healthmultiply": 0.5,
+	"potion": "minecraft:fire_resistance,1000000,1"
+ },
+ {
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "result": "deny"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:rat",
+    "gamestage": "enteredBeneath",
+	"random": 0.45,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:rat",
+    "result": "deny"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "gamestage": "enteredBeneath",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "result": "deny"
+ },
+ {
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+    "gamestage": "enteredBeneath",
+	"maxlight": 7,
+	"armorhelmet": "iceandfire:armor_silver_metal_helmet",
+	"armorchest": ["12=minecraft:iron_chestplate", "5=minecraft:chainmail_chestplate", "2=dungeontactics:steel_chestplate"],
+	"helditem": ["12=spartanweaponry:warhammer_iron", "5=spartanweaponry:longsword_iron", "8=spartanweaponry:mace_iron", "8=minecraft:iron_sword", "3=minecraft:iron_pickaxe"],
+	"maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+	"result": "allow"
+  },
+{
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+	"result": "deny"
+  },
+/*
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonskeleton",
+    "gamestage": "enteredBeneath",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonskeleton",
+    "result": "deny"
+ },
+*/
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "gamestage": "enteredBeneath",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "result": "deny"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "gamestage": "enteredBeneath",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+    {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "result": "deny"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "gamestage": "enteredBeneath",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+
+    {
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "result": "deny"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "gamestage": "enteredBeneath",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+  {
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "result": "deny"
+ },
+
+ {
+    "dimension": [10],
+    "mob": "specialmobs:darkcreeper",
+    "gamestage": "enteredBeneath",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:darkcreeper",
+    "result": "deny"
+ },
+ 
+ {
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "maxlight": 7,
+    "minlight": 0,
+    "gamestage": "enteredBeneath",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "result": "deny"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "maxlight": 7,
+    "minlight": 0,
+	"maxheight": 100,
+	"random": 0.3,
+	"seesky": false,
+    "gamestage": "enteredBeneath",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "result": "deny"
+ },
+ 
+//MinedMythril
+
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorhelmet": ["minecraft:diamond_helmet","endreborn:armour_helmet_helmet"],
+    "gamestage": "minedMythril"
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorchest": ["minecraft:diamond_chestplate","endreborn:armour_chestplate_obsidian"],
+    "gamestage": "minedMythril"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorlegs": ["minecraft:diamond_leggings","endreborn:armour_leggings_obsidian"],
+    "gamestage": "minedMythril"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorboots": ["minecraft:diamond_boots","endreborn:armour_boots_obsidian"],
+    "gamestage": "minedMythril"
+},
+
+
+
+
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "maxlight": 7,
+	"random": 0.5,
+	"gamestage": "minedMythril",
+	"biome": ["Ominous Woods", "Wasteland", "Dead Forest"],
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "maxlight": 7,
+    "minlight": 0,
+	"maxheight": 100,
+	"random": 0.3,
+	"seesky": false,
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "maxlight": 7,
+    "minlight": 0,
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "result": "deny"
+ },
+ {
+    "dimension": [10],
+    "mob": "specialmobs:darkcreeper",
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:darkcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "gamestage": "minedMythril",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "gamestage": "minedMythril",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "gamestage": "minedMythril",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "result": "deny"
+ },
+{
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+    "gamestage": "minedMythril",
+	"maxlight": 7,
+	"armorhelmet": "iceandfire:armor_silver_metal_helmet",
+	"armorchest": ["12=minecraft:iron_chestplate", "5=minecraft:chainmail_chestplate", "2=dungeontactics:steel_chestplate"],
+	"helditem": ["12=spartanweaponry:warhammer_iron", "5=spartanweaponry:longsword_iron", "8=spartanweaponry:mace_iron", "8=minecraft:iron_sword", "3=minecraft:iron_pickaxe"],
+	"maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+	"result": "allow"
+  },
+  {
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+	"result": "deny"
+  },
+{
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "rats:rat",
+    "gamestage": "minedMythril",
+	"random": 0.45,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:rat",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "gamestage": "minedMythril",
+	"random": 0.2,
+	"maxheight": 120,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 0.7,
+    "healthmultiply": 0.5,
+	"potion": "minecraft:fire_resistance,1000000,1"
+ },
+ {
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "gamestage": "minedMythril",
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+	"biome": ["Plains", "Jungle", "JungleHills", "JungleEdge", "Roofed Forest", "Sunflower Plains", "Jungle M", "JungleEdge M", "Rainforest", "Tropical Rainforest", "Forest", "ForestHills", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Bayou", "Bog", "Brushland", "Chaparral", "Cherry Blossom Grove", "Dead Forest", "Grassland", "Grove", "Lavender Fields", "Maple Woods", "Ominous Woods", "Orchard", "Overgrown Cliffs", "Prairie", "Seasonal Forest", "Shrubland", "Temperate Rainforest", "Pasture", "Wasteland", "Woodland", "Tropical Island"],
+    "gamestage": "minedMythril",
+	"maxlight": 7,
+    "minlight": 0,
+	"random": 0.10,
+	"seesky": true,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+	"biome": ["Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "TaigaHills", "Cold Taiga", "Cold Taiga Hills", "Taiga M", "Ice Plains Spikes", "Cold Taiga M", "Mega Spruce Taiga", "Alps", "Boreal Forest", "Cold Desert", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "Glacier", "SnowyTundra", "AlpsFoothills"],
+    "gamestage": "minedMythril",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+	"biome": ["Jungle", "JungleHills", "JungleEdge", "Swampland", "Swampland M", "Jungle M", "JungleEdge M", "Bayou", "Bog", "Dead Swamp", "Lush Swamp", "Rainforest", "Tropical Rainforest", "Tropical Island", "Quagmire", "MushroomIsland", "MushroomIslandShore", "Roofed Forest M", "Fen", "Flower Field", "Mangrove", "Marsh", "Moor", "Wetland", "Oasis", "Flower Island", "The Beneath"],  
+    "gamestage": "minedMythril",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,4"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "maxlight": 7,
+    "minlight": 0,
+    "random": 0.00001,
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10,7,4],
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "result": "deny"
+ },
+{
+   "dimension": 10,
+  "mob": "mowziesmobs:grottol",
+  "maxlight": 1,
+  "minlight": 0,
+  "gamestage": "minedMythril",
+  "maxheight": 200,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+  "result": "allow"
+},
+{
+    "dimension": 10,
+    "mob": "mowziesmobs:grottol",
+    "result": "deny"
+  },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "gamestage": "minedMythril",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "gamestage": "minedMythril",
+	"armorhelmet": "rats:fisherman_hat",
+	"armorchest": "minecraft:leather_chestplate",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "mintime": 1000,
+    "maxtime": 12000,
+    "maxlight": 15,
+    "minlight": 14,
+    "random": 0.003,
+    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
+    "seesky": true,
+    "gamestage": "minedMythril",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "gamestage": "minedMythril",
+    "random": 0.0225,
+    "maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "gamestage": "minedMythril",
+	"random": 0.01,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "result": "deny"
+ },
+ 
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+	"biome": ["Forest", "Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "ForestHills", "TaigaHills", "Extreme Hills Edge", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Cold Taiga", "Cold Taiga Hills", "Mega Taiga", "Mega Taiga Hills", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Taiga M", "Ice Plains Spikes", "Birch Forest M", "Birch Forest Hills M", "Roofed Forest M", "Cold Taiga M", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Extreme Hills+ M", "Alps", "Boreal Forest", "Cold Desert", "Crag", "Dead Forest", "Mountain", "Ominous Woods", "Seasonal Forest", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "SnowyTundra", "Glacier", "AlpsFoothills", "MountainFoothills", "The Beneath"],
+    "gamestage": "minedMythril",
+	"random": 0.25,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,7"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Mesa", "Mesa Plateau F", "Mesa Plateau", "Desert M", "Mesa (Bryce)", "Mesa Plateau F M", "Mesa Plateau M", "Desert", "DesertHills", "Xeric Shrubland", "Marsh", "Bayou", "Bog", "Dead Swamp", "Quagmire", "Fen", "Ominous Woods", "Dead Forest"],
+    "gamestage": "minedMythril",
+	"block": ["minecraft:grass", "minecraft:sand", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "biomesoplenty:grass", "biomesoplenty:white_sand", "biomesoplenty:dried_sand", "biomesoplenty:dirt"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+{
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Phantasmagoric Inferno", "Visceral Heap"],
+    "gamestage": "minedMythril",
+	"block": ["minecraft:soul_sand", "biomesoplenty:flesh", "biomesoplenty:ash_block"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 1.5,
+    "healthmultiply": 1.5,
+	"potion": ["minecraft:fire_resistance,1000000,1", "potioncore:purity,1000000,1", "extraalchemy:effect.concentration,1000000,1"]
+ },
+ {
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+
+
+
+//EnteredEnd
+
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorhelmet": ["minecraft:diamond_helmet","endreborn:armour_helmet_helmet"],
+    "gamestage": "enteredEnd"
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorchest": ["minecraft:diamond_chestplate","endreborn:armour_chestplate_obsidian"],
+    "gamestage": "enteredEnd"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorlegs": ["minecraft:diamond_leggings","endreborn:armour_leggings_obsidian"],
+    "gamestage": "enteredEnd"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorboots": ["minecraft:diamond_boots","endreborn:armour_boots_obsidian"],
+    "gamestage": "EnteredEnd"
+},
+
+
+
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "maxlight": 7,
+	"random": 0.5,
+	"gamestage": "enteredEnd",
+	"biome": ["Ominous Woods", "Wasteland", "Dead Forest"],
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "maxlight": 7,
+    "minlight": 0,
+	"maxheight": 100,
+	"random": 0.3,
+	"seesky": false,
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "maxlight": 7,
+    "minlight": 0,
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "result": "deny"
+ },
+ {
+    "dimension": [10],
+    "mob": "specialmobs:darkcreeper",
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:darkcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "gamestage": "enteredEnd",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "gamestage": "enteredEnd",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "gamestage": "enteredEnd",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "result": "deny"
+ },
+{
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+    "gamestage": "enteredEnd",
+	"maxlight": 7,
+	"armorhelmet": "iceandfire:armor_silver_metal_helmet",
+	"armorchest": ["12=minecraft:iron_chestplate", "5=minecraft:chainmail_chestplate", "2=dungeontactics:steel_chestplate"],
+	"helditem": ["12=spartanweaponry:warhammer_iron", "5=spartanweaponry:longsword_iron", "8=spartanweaponry:mace_iron", "8=minecraft:iron_sword", "3=minecraft:iron_pickaxe"],
+	"maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+	"result": "allow"
+  },
+  {
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+	"result": "deny"
+  },
+{
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "rats:rat",
+    "gamestage": "enteredEnd",
+	"random": 0.45,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:rat",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "gamestage": "enteredEnd",
+	"random": 0.2,
+	"maxheight": 120,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 0.7,
+    "healthmultiply": 0.5,
+	"potion": "minecraft:fire_resistance,1000000,1"
+ },
+ {
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "gamestage": "enteredEnd",
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+	"biome": ["Plains", "Jungle", "JungleHills", "JungleEdge", "Roofed Forest", "Sunflower Plains", "Jungle M", "JungleEdge M", "Rainforest", "Tropical Rainforest", "Forest", "ForestHills", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Bayou", "Bog", "Brushland", "Chaparral", "Cherry Blossom Grove", "Dead Forest", "Grassland", "Grove", "Lavender Fields", "Maple Woods", "Ominous Woods", "Orchard", "Overgrown Cliffs", "Prairie", "Seasonal Forest", "Shrubland", "Temperate Rainforest", "Pasture", "Wasteland", "Woodland", "Tropical Island"],
+    "gamestage": "enteredEnd",
+	"maxlight": 7,
+    "minlight": 0,
+	"random": 0.10,
+	"seesky": true,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+	"biome": ["Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "TaigaHills", "Cold Taiga", "Cold Taiga Hills", "Taiga M", "Ice Plains Spikes", "Cold Taiga M", "Mega Spruce Taiga", "Alps", "Boreal Forest", "Cold Desert", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "Glacier", "SnowyTundra", "AlpsFoothills"],
+    "gamestage": "enteredEnd",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+	"biome": ["Jungle", "JungleHills", "JungleEdge", "Swampland", "Swampland M", "Jungle M", "JungleEdge M", "Bayou", "Bog", "Dead Swamp", "Lush Swamp", "Rainforest", "Tropical Rainforest", "Tropical Island", "Quagmire", "MushroomIsland", "MushroomIslandShore", "Roofed Forest M", "Fen", "Flower Field", "Mangrove", "Marsh", "Moor", "Wetland", "Oasis", "Flower Island", "The Beneath"],  
+    "gamestage": "enteredEnd",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,4"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "maxlight": 7,
+    "minlight": 0,
+    "random": 0.00001,
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10,7,4],
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "result": "deny"
+ },
+{
+   "dimension": 10,
+  "mob": "mowziesmobs:grottol",
+  "maxlight": 1,
+  "minlight": 0,
+  "gamestage": "enteredEnd",
+  "maxheight": 200,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+  "result": "allow"
+},
+{
+    "dimension": 10,
+    "mob": "mowziesmobs:grottol",
+    "result": "deny"
+  },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "gamestage": "enteredEnd",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "gamestage": "enteredEnd",
+	"armorhelmet": "rats:fisherman_hat",
+	"armorchest": "minecraft:leather_chestplate",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "mintime": 1000,
+    "maxtime": 12000,
+    "maxlight": 15,
+    "minlight": 14,
+    "random": 0.003,
+    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
+    "seesky": true,
+    "gamestage": "enteredEnd",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "gamestage": "enteredEnd",
+    "random": 0.0225,
+    "maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "gamestage": "enteredEnd",
+	"random": 0.01,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "result": "deny"
+ },
+ 
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+	"biome": ["Forest", "Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "ForestHills", "TaigaHills", "Extreme Hills Edge", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Cold Taiga", "Cold Taiga Hills", "Mega Taiga", "Mega Taiga Hills", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Taiga M", "Ice Plains Spikes", "Birch Forest M", "Birch Forest Hills M", "Roofed Forest M", "Cold Taiga M", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Extreme Hills+ M", "Alps", "Boreal Forest", "Cold Desert", "Crag", "Dead Forest", "Mountain", "Ominous Woods", "Seasonal Forest", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "SnowyTundra", "Glacier", "AlpsFoothills", "MountainFoothills", "The Beneath"],
+    "gamestage": "enteredEnd",
+	"random": 0.25,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,7"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Mesa", "Mesa Plateau F", "Mesa Plateau", "Desert M", "Mesa (Bryce)", "Mesa Plateau F M", "Mesa Plateau M", "Desert", "DesertHills", "Xeric Shrubland", "Marsh", "Bayou", "Bog", "Dead Swamp", "Quagmire", "Fen", "Ominous Woods", "Dead Forest"],
+    "gamestage": "enteredEnd",
+	"block": ["minecraft:grass", "minecraft:sand", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "biomesoplenty:grass", "biomesoplenty:white_sand", "biomesoplenty:dried_sand", "biomesoplenty:dirt"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+{
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Phantasmagoric Inferno", "Visceral Heap"],
+    "gamestage": "enteredEnd",
+	"block": ["minecraft:soul_sand", "biomesoplenty:flesh", "biomesoplenty:ash_block"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 1.5,
+    "healthmultiply": 1.5,
+	"potion": ["minecraft:fire_resistance,1000000,1", "potioncore:purity,1000000,1", "extraalchemy:effect.concentration,1000000,1"]
+ },
+ {
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+
+
+
+//KilledEnderDragon
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorhelmet": ["minecraft:diamond_helmet","endreborn:armour_helmet_helmet"],
+    "gamestage": "killedEnderDragon"
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorchest": ["minecraft:diamond_chestplate","endreborn:armour_chestplate_obsidian"],
+    "gamestage": "killedEnderDragon"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorlegs": ["minecraft:diamond_leggings","endreborn:armour_leggings_obsidian"],
+    "gamestage": "killedEnderDragon"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorboots": ["minecraft:diamond_boots","endreborn:armour_boots_obsidian"],
+    "gamestage": "killedEnderDragon"
+},
+
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorhelmet": ["simpleores:mythril_helmet", "simpleores:adamantium_helmet"],
+    "gamestage": "killedEnderDragon"
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorchest": ["simpleores:mythril_chestplate", "simpleores:adamantium_chestplate"],
+    "gamestage": "killedEnderDragon"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorlegs": ["simpleores:mythril_leggings", "simpleores:adamantium_leggings"],
+    "gamestage": "killedEnderDragon"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorboots": ["simpleores:mythril_boots", "simpleores:adamantium_boots"],
+    "gamestage": "killedEnderDragon"
+},
+
+
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "maxlight": 7,
+	"random": 0.5,
+	"gamestage": "killedEnderDragon",
+	"biome": ["Ominous Woods", "Wasteland", "Dead Forest"],
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "maxlight": 7,
+    "minlight": 0,
+	"maxheight": 100,
+	"random": 0.3,
+	"seesky": false,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "maxlight": 7,
+    "minlight": 0,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "result": "deny"
+ },
+ {
+    "dimension": [10],
+    "mob": "specialmobs:darkcreeper",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:darkcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "gamestage": "killedEnderDragon",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "gamestage": "killedEnderDragon",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "gamestage": "killedEnderDragon",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "result": "deny"
+ },
+{
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+    "gamestage": "killedEnderDragon",
+	"maxlight": 7,
+	"armorhelmet": "iceandfire:armor_silver_metal_helmet",
+	"armorchest": ["12=minecraft:iron_chestplate", "5=minecraft:chainmail_chestplate", "2=dungeontactics:steel_chestplate"],
+	"helditem": ["12=spartanweaponry:warhammer_iron", "5=spartanweaponry:longsword_iron", "8=spartanweaponry:mace_iron", "8=minecraft:iron_sword", "3=minecraft:iron_pickaxe"],
+	"maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+	"result": "allow"
+  },
+  {
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+	"result": "deny"
+  },
+{
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "rats:rat",
+    "gamestage": "killedEnderDragon",
+	"random": 0.45,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:rat",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "gamestage": "killedEnderDragon",
+	"random": 0.2,
+	"maxheight": 120,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 0.7,
+    "healthmultiply": 0.5,
+	"potion": "minecraft:fire_resistance,1000000,1"
+ },
+ {
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "gamestage": "killedEnderDragon",
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+	"biome": ["Plains", "Jungle", "JungleHills", "JungleEdge", "Roofed Forest", "Sunflower Plains", "Jungle M", "JungleEdge M", "Rainforest", "Tropical Rainforest", "Forest", "ForestHills", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Bayou", "Bog", "Brushland", "Chaparral", "Cherry Blossom Grove", "Dead Forest", "Grassland", "Grove", "Lavender Fields", "Maple Woods", "Ominous Woods", "Orchard", "Overgrown Cliffs", "Prairie", "Seasonal Forest", "Shrubland", "Temperate Rainforest", "Pasture", "Wasteland", "Woodland", "Tropical Island"],
+    "gamestage": "killedEnderDragon",
+	"maxlight": 7,
+    "minlight": 0,
+	"random": 0.10,
+	"seesky": true,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+	"biome": ["Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "TaigaHills", "Cold Taiga", "Cold Taiga Hills", "Taiga M", "Ice Plains Spikes", "Cold Taiga M", "Mega Spruce Taiga", "Alps", "Boreal Forest", "Cold Desert", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "Glacier", "SnowyTundra", "AlpsFoothills"],
+    "gamestage": "killedEnderDragon",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+	"biome": ["Jungle", "JungleHills", "JungleEdge", "Swampland", "Swampland M", "Jungle M", "JungleEdge M", "Bayou", "Bog", "Dead Swamp", "Lush Swamp", "Rainforest", "Tropical Rainforest", "Tropical Island", "Quagmire", "MushroomIsland", "MushroomIslandShore", "Roofed Forest M", "Fen", "Flower Field", "Mangrove", "Marsh", "Moor", "Wetland", "Oasis", "Flower Island", "The Beneath"],  
+    "gamestage": "killedEnderDragon",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,4"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "maxlight": 7,
+    "minlight": 0,
+    "random": 0.00001,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10,7,4],
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "result": "deny"
+ },
+{
+   "dimension": 10,
+  "mob": "mowziesmobs:grottol",
+  "maxlight": 1,
+  "minlight": 0,
+  "gamestage": "killedEnderDragon",
+  "maxheight": 200,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+  "result": "allow"
+},
+{
+    "dimension": 10,
+    "mob": "mowziesmobs:grottol",
+    "result": "deny"
+  },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "gamestage": "killedEnderDragon",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "gamestage": "killedEnderDragon",
+	"armorhelmet": "rats:fisherman_hat",
+	"armorchest": "minecraft:leather_chestplate",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "mintime": 1000,
+    "maxtime": 12000,
+    "maxlight": 15,
+    "minlight": 14,
+    "random": 0.003,
+    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
+    "seesky": true,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "gamestage": "killedEnderDragon",
+    "random": 0.0225,
+    "maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "gamestage": "killedEnderDragon",
+	"random": 0.01,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "result": "deny"
+ },
+ 
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+	"biome": ["Forest", "Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "ForestHills", "TaigaHills", "Extreme Hills Edge", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Cold Taiga", "Cold Taiga Hills", "Mega Taiga", "Mega Taiga Hills", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Taiga M", "Ice Plains Spikes", "Birch Forest M", "Birch Forest Hills M", "Roofed Forest M", "Cold Taiga M", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Extreme Hills+ M", "Alps", "Boreal Forest", "Cold Desert", "Crag", "Dead Forest", "Mountain", "Ominous Woods", "Seasonal Forest", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "SnowyTundra", "Glacier", "AlpsFoothills", "MountainFoothills", "The Beneath"],
+    "gamestage": "killedEnderDragon",
+	"random": 0.25,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,7"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Mesa", "Mesa Plateau F", "Mesa Plateau", "Desert M", "Mesa (Bryce)", "Mesa Plateau F M", "Mesa Plateau M", "Desert", "DesertHills", "Xeric Shrubland", "Marsh", "Bayou", "Bog", "Dead Swamp", "Quagmire", "Fen", "Ominous Woods", "Dead Forest"],
+    "gamestage": "killedEnderDragon",
+	"block": ["minecraft:grass", "minecraft:sand", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "biomesoplenty:grass", "biomesoplenty:white_sand", "biomesoplenty:dried_sand", "biomesoplenty:dirt"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+{
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Phantasmagoric Inferno", "Visceral Heap"],
+    "gamestage": "killedEnderDragon",
+	"block": ["minecraft:soul_sand", "biomesoplenty:flesh", "biomesoplenty:ash_block"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 1.5,
+    "healthmultiply": 1.5,
+	"potion": ["minecraft:fire_resistance,1000000,1", "potioncore:purity,1000000,1", "extraalchemy:effect.concentration,1000000,1"]
+ },
+ {
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+{
+    "dimension": [0,1,10],
+    "mob": "primitivemobs:void_eye",
+    "gamestage": "killedEnderDragon",
+    "maxlight": 5,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,1,10],
+    "mob": "primitivemobs:void_eye",
+    "gamestage": "killedEnderDragon",
+    "maxlight": 5,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "difficulty": "peaceful",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:endercreeper",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:dominationwitch",
+    "gamestage": "killedEnderDragon",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:toughsilverfish",
+    "gamestage": "killedEnderDragon",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:giantzombie",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:giantskeleton",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:spitfireskeleton",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:giantspider",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:flyingspider",
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": 0,
+    "mob": "specialmobs:watermelonslime",
+    "mintime": 1000,
+    "maxtime": 12000,
+    "maxlight": 15,
+    "minlight": 14,
+    "random": 0.003,
+    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
+    "seesky": true,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "specialmobs:icyenderman",
+    "biometype": "COLD",
+    "random": 0.01,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "specialmobs:lightningenderman",
+    "biometype": "MOUNTAIN",
+    "random": 0.01,
+    "gamestage": "killedEnderDragon",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "specialmobs:mirageenderman",
+    "gamestage": "killedEnderDragon",
+    "random": 0.01,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10,1],
+    "mob": "specialmobs:mirageenderman",
+    "result": "deny"
+ },
+
+ {
+    "dimension": [0,10,1],
+    "mob": "endreborn:watcher",
+    "gamestage": "killedEnderDragon",
+    "random": 0.01,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "endreborn:chronologist",
+    "gamestage": "killedEnderDragon",
+    "random": 0.01,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+
+
+//EnteredTwilightForest
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorhelmet": ["minecraft:diamond_helmet","endreborn:armour_helmet_helmet"],
+    "gamestage": "enteredTwilightForest"
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorchest": ["minecraft:diamond_chestplate","endreborn:armour_chestplate_obsidian"],
+    "gamestage": "enteredTwilightForest"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorlegs": ["minecraft:diamond_leggings","endreborn:armour_leggings_obsidian"],
+    "gamestage": "enteredTwilightForest"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorboots": ["minecraft:diamond_boots","endreborn:armour_boots_obsidian"],
+    "gamestage": "enteredTwilightForest"
+},
+
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorhelmet": ["simpleores:mythril_helmet", "simpleores:adamantium_helmet"],
+    "gamestage": "enteredTwilightForest"
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorchest": ["simpleores:mythril_chestplate", "simpleores:adamantium_chestplate"],
+    "gamestage": "enteredTwilightForest"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorlegs": ["simpleores:mythril_leggings", "simpleores:adamantium_leggings"],
+    "gamestage": "enteredTwilightForest"
+
+},
+{
+    "mob": ["minecraft:zombie","minecraft:skeleton","primitivemobs:skeleton_warrior"],
+    "random": 0.1,
+    "armorboots": ["simpleores:mythril_boots", "simpleores:adamantium_boots"],
+    "gamestage": "enteredTwilightForest"
+},
+
+
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "maxlight": 7,
+	"random": 0.5,
+	"gamestage": "enteredTwilightForest",
+	"biome": ["Ominous Woods", "Wasteland", "Dead Forest"],
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undertaker",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "maxlight": 7,
+    "minlight": 0,
+	"maxheight": 100,
+	"random": 0.3,
+	"seesky": false,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "betteranimalsplus:zotzpyre",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "maxlight": 7,
+    "minlight": 0,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 10,
+    "mob": "specialmobs:deathcreeper",
+    "result": "deny"
+ },
+ {
+    "dimension": [10],
+    "mob": "specialmobs:darkcreeper",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:darkcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "gamestage": "enteredTwilightForest",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:undeadwitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:blindingsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+    "maxheight": 80,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:poisonsilverfish",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:plaguezombie",
+    "result": "deny"
+ },
+{
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 7,
+	"armorhelmet": "iceandfire:armor_silver_metal_helmet",
+	"armorchest": ["12=minecraft:iron_chestplate", "5=minecraft:chainmail_chestplate", "2=dungeontactics:steel_chestplate"],
+	"helditem": ["12=spartanweaponry:warhammer_iron", "5=spartanweaponry:longsword_iron", "8=spartanweaponry:mace_iron", "8=minecraft:iron_sword", "3=minecraft:iron_pickaxe"],
+	"maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+	"result": "allow"
+  },
+  {
+	"dimension" : [0, 10],
+	"mob": "specialmobs:knightskeleton",
+	"result": "deny"
+  },
+{
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:poisonspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "rats:rat",
+    "gamestage": "enteredTwilightForest",
+	"random": 0.45,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:rat",
+    "result": "deny"
+ },
+{
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "gamestage": "enteredTwilightForest",
+	"random": 0.2,
+	"maxheight": 120,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 0.7,
+    "healthmultiply": 0.5,
+	"potion": "minecraft:fire_resistance,1000000,1"
+ },
+ {
+    "dimension": 10,
+    "mob": "rats:ratlantean_spirit",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "gamestage": "enteredTwilightForest",
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "default"
+ },
+ {
+    "dimension": 0,
+    "mob": "rats:black_death",
+    "onjoin": "true",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+	"biome": ["Plains", "Jungle", "JungleHills", "JungleEdge", "Roofed Forest", "Sunflower Plains", "Jungle M", "JungleEdge M", "Rainforest", "Tropical Rainforest", "Forest", "ForestHills", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Bayou", "Bog", "Brushland", "Chaparral", "Cherry Blossom Grove", "Dead Forest", "Grassland", "Grove", "Lavender Fields", "Maple Woods", "Ominous Woods", "Orchard", "Overgrown Cliffs", "Prairie", "Seasonal Forest", "Shrubland", "Temperate Rainforest", "Pasture", "Wasteland", "Woodland", "Tropical Island"],
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 7,
+    "minlight": 0,
+	"random": 0.10,
+	"seesky": true,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:undeadswine",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+	"biome": ["Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "TaigaHills", "Cold Taiga", "Cold Taiga Hills", "Taiga M", "Ice Plains Spikes", "Cold Taiga M", "Mega Spruce Taiga", "Alps", "Boreal Forest", "Cold Desert", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "Glacier", "SnowyTundra", "AlpsFoothills"],
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:zombiefrozen",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+	"biome": ["Jungle", "JungleHills", "JungleEdge", "Swampland", "Swampland M", "Jungle M", "JungleEdge M", "Bayou", "Bog", "Dead Swamp", "Lush Swamp", "Rainforest", "Tropical Rainforest", "Tropical Island", "Quagmire", "MushroomIsland", "MushroomIslandShore", "Roofed Forest M", "Fen", "Flower Field", "Mangrove", "Marsh", "Moor", "Wetland", "Oasis", "Flower Island", "The Beneath"],  
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,4"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:zombiemushroom",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "maxlight": 7,
+    "minlight": 0,
+    "random": 0.00001,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10,7,4],
+    "mob": "trumpetskeleton:trumpet_skeleton",
+    "result": "deny"
+ },
+{
+   "dimension": 10,
+  "mob": "mowziesmobs:grottol",
+  "maxlight": 1,
+  "minlight": 0,
+  "gamestage": "enteredTwilightForest",
+  "maxheight": 200,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+  "result": "allow"
+},
+{
+    "dimension": 10,
+    "mob": "mowziesmobs:grottol",
+    "result": "deny"
+  },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:lightningcreeper",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "gamestage": "enteredTwilightForest",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:shadowswitch",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "gamestage": "enteredTwilightForest",
+	"armorhelmet": "rats:fisherman_hat",
+	"armorchest": "minecraft:leather_chestplate",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:fishingzombie",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:ninjaskeleton",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "specialmobs:webspider",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "mintime": 1000,
+    "maxtime": 12000,
+    "maxlight": 15,
+    "minlight": 14,
+    "random": 0.003,
+    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
+    "seesky": true,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "specialmobs:blueberryslime",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "gamestage": "enteredTwilightForest",
+    "random": 0.0225,
+    "maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"potion": "rats:plague,1000000,1"
+ },
+ {
+    "dimension": [0,10,1,-1],
+    "mob": "specialmobs:blindingenderman",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "gamestage": "enteredTwilightForest",
+	"random": 0.01,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "rats:plague_beast",
+    "result": "deny"
+ },
+ 
+{
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+	"biome": ["Forest", "Taiga", "FrozenRiver", "Ice Plains", "Ice Mountains", "ForestHills", "TaigaHills", "Extreme Hills Edge", "Birch Forest", "Birch Forest Hills", "Roofed Forest", "Cold Taiga", "Cold Taiga Hills", "Mega Taiga", "Mega Taiga Hills", "Extreme Hills+", "Extreme Hills M", "Flower Forest", "Taiga M", "Ice Plains Spikes", "Birch Forest M", "Birch Forest Hills M", "Roofed Forest M", "Cold Taiga M", "Mega Spruce Taiga", "Redwood Taiga Hills M", "Extreme Hills+ M", "Alps", "Boreal Forest", "Cold Desert", "Crag", "Dead Forest", "Mountain", "Ominous Woods", "Seasonal Forest", "Snowy Coniferous Forest", "Snowy Forest", "Tundra", "SnowyTundra", "Glacier", "AlpsFoothills", "MountainFoothills", "The Beneath"],
+    "gamestage": "enteredTwilightForest",
+	"random": 0.25,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow",
+    "potion": "extraalchemy:effect.leech,1000000,7"
+ },
+ {
+    "dimension": [0,10],
+    "mob": "mod_lavacow:ithaqua",
+    "result": "deny"
+ },
+{
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Mesa", "Mesa Plateau F", "Mesa Plateau", "Desert M", "Mesa (Bryce)", "Mesa Plateau F M", "Mesa Plateau M", "Desert", "DesertHills", "Xeric Shrubland", "Marsh", "Bayou", "Bog", "Dead Swamp", "Quagmire", "Fen", "Ominous Woods", "Dead Forest"],
+    "gamestage": "enteredTwilightForest",
+	"block": ["minecraft:grass", "minecraft:sand", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "biomesoplenty:grass", "biomesoplenty:white_sand", "biomesoplenty:dried_sand", "biomesoplenty:dirt"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+ {
+    "dimension": 0,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+{
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+	"biome": ["Phantasmagoric Inferno", "Visceral Heap"],
+    "gamestage": "enteredTwilightForest",
+	"block": ["minecraft:soul_sand", "biomesoplenty:flesh", "biomesoplenty:ash_block"],
+	"random": 0.20,
+	"maxlight": 7,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow",
+	"damagemultiply": 1.5,
+    "healthmultiply": 1.5,
+	"potion": ["minecraft:fire_resistance,1000000,1", "potioncore:purity,1000000,1", "extraalchemy:effect.concentration,1000000,1"]
+ },
+ {
+    "dimension": -1,
+    "mob": "mod_lavacow:boneworm",
+    "result": "deny"
+ },
+{
+    "dimension": [0,1,10],
+    "mob": "primitivemobs:void_eye",
+    "gamestage": "enteredTwilightForest",
+    "maxlight": 5,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,1,10],
+    "mob": "primitivemobs:void_eye",
+    "gamestage": "enteredTwilightForest",
+    "maxlight": 5,
+    "minlight": 0,
+    "maxcount": {
+        "amount": 1,
+        "perplayer": true
+    },
+    "difficulty": "peaceful",
+    "result": "deny"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:endercreeper",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:dominationwitch",
+    "gamestage": "enteredTwilightForest",
+	"random": 0.12,
+    "maxcount": {
+        "amount": 3,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:toughsilverfish",
+    "gamestage": "enteredTwilightForest",
+	"maxlight": 5,
+    "minlight": 0,
+	"random": 0.3,
+	"block": ["minecraft:sandstone", "minecraft:gravel", "undergroundbiomes:metamorphic_gravel", "undergroundbiomes:sedimentary_gravel", "undergroundbiomes:igneous_sand", "undergroundbiomes:metamorphic_sand", "undergroundbiomes:sedimentary_sand", "undergroundbiomes:igneous_sandstone", "undergroundbiomes:metamorphic_sandstone", "undergroundbiomes:sedimentary_sandstone", "biomesoplenty:white_sandstone", "minecraft:stone", "undergroundbiomes:igneous_stone", "undergroundbiomes:metamorphic_stone", "undergroundbiomes:igneous_overgrown", "undergroundbiomes:metamorphic_overgrown", "undergroundbiomes:sedimentary_stone", "undergroundbiomes:sedimentary_overgrown"],
+	"seesky": false,
+    "maxcount": {
+        "amount": 7,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:giantzombie",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:giantskeleton",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:spitfireskeleton",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:giantspider",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10],
+    "mob": "specialmobs:flyingspider",
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 5,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": 0,
+    "mob": "specialmobs:watermelonslime",
+    "mintime": 1000,
+    "maxtime": 12000,
+    "maxlight": 15,
+    "minlight": 14,
+    "random": 0.003,
+    "block": ["minecraft:grass","biomesoplenty:grass:2","biomesoplenty:grass:3","biomesoplenty:grass:4"],
+    "seesky": true,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "allow"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "specialmobs:icyenderman",
+    "biometype": "COLD",
+    "random": 0.01,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "specialmobs:lightningenderman",
+    "biometype": "MOUNTAIN",
+    "random": 0.01,
+    "gamestage": "enteredTwilightForest",
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "specialmobs:mirageenderman",
+    "gamestage": "enteredTwilightForest",
+    "random": 0.01,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+ {
+    "dimension": [0,10,1],
+    "mob": "specialmobs:mirageenderman",
+    "result": "deny"
+ },
+
+ {
+    "dimension": [0,10,1],
+    "mob": "endreborn:watcher",
+    "gamestage": "enteredTwilightForest",
+    "random": 0.01,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ },
+{
+    "dimension": [0,10,1],
+    "mob": "endreborn:chronologist",
+    "gamestage": "enteredTwilightForest",
+    "random": 0.01,
+    "maxcount": {
+        "amount": 2,
+        "perplayer": true
+    },
+    "result": "default"
+ }
+
+
 
 ]
